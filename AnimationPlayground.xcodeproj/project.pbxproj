@@ -8,11 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		AAE81C851BA29E8E00EAB041 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAE81C841BA29E8E00EAB041 /* AppDelegate.swift */; };
-		AAE81C871BA29E8E00EAB041 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAE81C861BA29E8E00EAB041 /* ViewController.swift */; };
 		AAE81C8A1BA29E8E00EAB041 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AAE81C881BA29E8E00EAB041 /* Main.storyboard */; };
 		AAE81C8C1BA29E8E00EAB041 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AAE81C8B1BA29E8E00EAB041 /* Images.xcassets */; };
 		AAE81C8F1BA29E8E00EAB041 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = AAE81C8D1BA29E8E00EAB041 /* LaunchScreen.xib */; };
 		AAE81C9B1BA29E8E00EAB041 /* AnimationPlaygroundTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAE81C9A1BA29E8E00EAB041 /* AnimationPlaygroundTests.swift */; };
+		AAE81CA61BA29FD500EAB041 /* CreatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAE81CA51BA29FD500EAB041 /* CreatorViewController.swift */; };
+		AAE81CA81BA2A40D00EAB041 /* DrawImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAE81CA71BA2A40D00EAB041 /* DrawImageViewController.swift */; };
+		AAE81CAA1BA2A5B100EAB041 /* ShapeLayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAE81CA91BA2A5B100EAB041 /* ShapeLayerViewController.swift */; };
+		AAE81CAC1BA2ABB700EAB041 /* CircleAroundViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAE81CAB1BA2ABB700EAB041 /* CircleAroundViewController.swift */; };
+		AAE81CAE1BA2B60300EAB041 /* CocoaUIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAE81CAD1BA2B60300EAB041 /* CocoaUIViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,13 +33,17 @@
 		AAE81C7F1BA29E8E00EAB041 /* AnimationPlayground.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AnimationPlayground.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AAE81C831BA29E8E00EAB041 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AAE81C841BA29E8E00EAB041 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		AAE81C861BA29E8E00EAB041 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		AAE81C891BA29E8E00EAB041 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AAE81C8B1BA29E8E00EAB041 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		AAE81C8E1BA29E8E00EAB041 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		AAE81C941BA29E8E00EAB041 /* AnimationPlaygroundTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AnimationPlaygroundTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AAE81C991BA29E8E00EAB041 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AAE81C9A1BA29E8E00EAB041 /* AnimationPlaygroundTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationPlaygroundTests.swift; sourceTree = "<group>"; };
+		AAE81CA51BA29FD500EAB041 /* CreatorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CreatorViewController.swift; path = Controller/CreatorViewController.swift; sourceTree = "<group>"; };
+		AAE81CA71BA2A40D00EAB041 /* DrawImageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DrawImageViewController.swift; path = Controller/DrawImageViewController.swift; sourceTree = "<group>"; };
+		AAE81CA91BA2A5B100EAB041 /* ShapeLayerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ShapeLayerViewController.swift; path = Controller/ShapeLayerViewController.swift; sourceTree = "<group>"; };
+		AAE81CAB1BA2ABB700EAB041 /* CircleAroundViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CircleAroundViewController.swift; path = Controller/CircleAroundViewController.swift; sourceTree = "<group>"; };
+		AAE81CAD1BA2B60300EAB041 /* CocoaUIViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CocoaUIViewController.swift; path = Controller/CocoaUIViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,8 +85,8 @@
 		AAE81C811BA29E8E00EAB041 /* AnimationPlayground */ = {
 			isa = PBXGroup;
 			children = (
+				AAE81CA41BA29F6A00EAB041 /* Controller */,
 				AAE81C841BA29E8E00EAB041 /* AppDelegate.swift */,
-				AAE81C861BA29E8E00EAB041 /* ViewController.swift */,
 				AAE81C881BA29E8E00EAB041 /* Main.storyboard */,
 				AAE81C8B1BA29E8E00EAB041 /* Images.xcassets */,
 				AAE81C8D1BA29E8E00EAB041 /* LaunchScreen.xib */,
@@ -110,6 +118,18 @@
 				AAE81C991BA29E8E00EAB041 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		AAE81CA41BA29F6A00EAB041 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				AAE81CA51BA29FD500EAB041 /* CreatorViewController.swift */,
+				AAE81CA71BA2A40D00EAB041 /* DrawImageViewController.swift */,
+				AAE81CA91BA2A5B100EAB041 /* ShapeLayerViewController.swift */,
+				AAE81CAB1BA2ABB700EAB041 /* CircleAroundViewController.swift */,
+				AAE81CAD1BA2B60300EAB041 /* CocoaUIViewController.swift */,
+			);
+			name = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -212,8 +232,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AAE81C871BA29E8E00EAB041 /* ViewController.swift in Sources */,
+				AAE81CAE1BA2B60300EAB041 /* CocoaUIViewController.swift in Sources */,
 				AAE81C851BA29E8E00EAB041 /* AppDelegate.swift in Sources */,
+				AAE81CA81BA2A40D00EAB041 /* DrawImageViewController.swift in Sources */,
+				AAE81CAA1BA2A5B100EAB041 /* ShapeLayerViewController.swift in Sources */,
+				AAE81CA61BA29FD500EAB041 /* CreatorViewController.swift in Sources */,
+				AAE81CAC1BA2ABB700EAB041 /* CircleAroundViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
