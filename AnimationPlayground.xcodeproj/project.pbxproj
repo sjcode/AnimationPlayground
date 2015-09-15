@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AA06D83C1BA46C5B00A03E3F /* RotationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA06D83B1BA46C5B00A03E3F /* RotationViewController.swift */; };
 		AAE81C851BA29E8E00EAB041 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAE81C841BA29E8E00EAB041 /* AppDelegate.swift */; };
 		AAE81C8A1BA29E8E00EAB041 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AAE81C881BA29E8E00EAB041 /* Main.storyboard */; };
 		AAE81C8C1BA29E8E00EAB041 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AAE81C8B1BA29E8E00EAB041 /* Images.xcassets */; };
@@ -30,6 +31,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		AA06D83B1BA46C5B00A03E3F /* RotationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RotationViewController.swift; path = Controller/RotationViewController.swift; sourceTree = "<group>"; };
 		AAE81C7F1BA29E8E00EAB041 /* AnimationPlayground.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AnimationPlayground.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AAE81C831BA29E8E00EAB041 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AAE81C841BA29E8E00EAB041 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -128,6 +130,7 @@
 				AAE81CA91BA2A5B100EAB041 /* ShapeLayerViewController.swift */,
 				AAE81CAB1BA2ABB700EAB041 /* CircleAroundViewController.swift */,
 				AAE81CAD1BA2B60300EAB041 /* CocoaUIViewController.swift */,
+				AA06D83B1BA46C5B00A03E3F /* RotationViewController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -236,6 +239,7 @@
 				AAE81C851BA29E8E00EAB041 /* AppDelegate.swift in Sources */,
 				AAE81CA81BA2A40D00EAB041 /* DrawImageViewController.swift in Sources */,
 				AAE81CAA1BA2A5B100EAB041 /* ShapeLayerViewController.swift in Sources */,
+				AA06D83C1BA46C5B00A03E3F /* RotationViewController.swift in Sources */,
 				AAE81CA61BA29FD500EAB041 /* CreatorViewController.swift in Sources */,
 				AAE81CAC1BA2ABB700EAB041 /* CircleAroundViewController.swift in Sources */,
 			);
@@ -433,6 +437,7 @@
 				AAE81CA01BA29E8E00EAB041 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		AAE81CA11BA29E8E00EAB041 /* Build configuration list for PBXNativeTarget "AnimationPlaygroundTests" */ = {
 			isa = XCConfigurationList;
@@ -441,6 +446,7 @@
 				AAE81CA31BA29E8E00EAB041 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
