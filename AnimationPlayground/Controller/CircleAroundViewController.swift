@@ -15,21 +15,21 @@ class CircleAroundViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.manLayer = CALayer()
-        self.manLayer.contents = UIImage(named: "snowman")?.CGImage
-        self.manLayer.bounds = CGRectMake(0, 0, 30, 30)
+        self.manLayer.contents = UIImage(named: "snowman")?.cgImage
+        self.manLayer.bounds = CGRect(x: 0, y: 0, width: 30, height: 30) //CGRectMake(0, 0, 30, 30)
         self.layerView.layer.addSublayer(self.manLayer)
-        
-        var frame = CGRectInset(self.layerView.bounds, -20, -20)
-        var path = CGPathCreateWithEllipseInRect(frame, nil)
+      
+      let frame = self.layerView.bounds.insetBy(dx: -20, dy: -20)
+        var path =  CGPath.init(ellipseIn: frame, transform: nil) //CGPathCreateWithEllipseInRect(frame, nil)
         var animation = CAKeyframeAnimation()
         animation.keyPath = "position"
         animation.path = path
         animation.duration = 4
-        animation.additive = true
+        animation.isAdditive = true
         animation.repeatCount = HUGE
         animation.calculationMode = kCAAnimationPaced
         animation.rotationMode = kCAAnimationRotateAuto
         
-        self.manLayer.addAnimation(animation, forKey: "circlearound")
+      self.manLayer.add(animation, forKey: "circlearound")
     }
 }

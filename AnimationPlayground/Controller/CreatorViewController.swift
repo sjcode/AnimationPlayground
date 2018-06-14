@@ -18,9 +18,9 @@ class CreatorViewController: UIViewController {
     }
     
     func createSubLayer(){
-        var colorLayer : CALayer = CALayer();
-        colorLayer.bounds = CGRectMake(0, 0, 100, 100);
-        colorLayer.backgroundColor = UIColor.redColor().CGColor
-        self.layerView.layer.addSublayer(colorLayer);
+        let colorLayer : CALayer = CALayer()
+        colorLayer.bounds = CGRect(x: 0, y: 0, width: 100, height: 100)
+        colorLayer.backgroundColor = UIColor.red.cgColor
+        self.layerView.layer.addSublayer(colorLayer)
     }
 }

@@ -14,31 +14,32 @@ class ShapeLayerViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        var bezierPath = UIBezierPath()
-        bezierPath.moveToPoint(CGPointMake(0,150))
-        bezierPath.addCurveToPoint(CGPointMake(300, 150), controlPoint1: CGPointMake(75, 0), controlPoint2: CGPointMake(225, 300))
+        let bezierPath = UIBezierPath()
+        bezierPath.move(to: CGPoint(x: 0, y: 150))
+        bezierPath.addCurve(to: CGPoint(x: 300, y: 150), controlPoint1: CGPoint(x: 75, y: 0), controlPoint2: CGPoint(x: 225, y: 300))
+      
         
-        var pathLayer = CAShapeLayer()
-        pathLayer.path = bezierPath.CGPath
-        pathLayer.fillColor = UIColor.clearColor().CGColor
-        pathLayer.strokeColor = UIColor.redColor().CGColor
+        let pathLayer = CAShapeLayer()
+        pathLayer.path = bezierPath.cgPath
+        pathLayer.fillColor = UIColor.clear.cgColor
+        pathLayer.strokeColor = UIColor.red.cgColor
         pathLayer.lineWidth = 3.0
         self.containLayer.layer .addSublayer(pathLayer)
         
-        var bikeImage = UIImage(named: "bike")!
-        var bikeLayer = CALayer()
-        bikeLayer.contents = bikeImage.CGImage
-        bikeLayer.frame = CGRectMake(0,0,30, 20)
-        bikeLayer.position = CGPointMake(0, 150);
+        let bikeImage = UIImage(named: "bike")!
+        let bikeLayer = CALayer()
+        bikeLayer.contents = bikeImage.cgImage
+        bikeLayer.frame = CGRect(x: 0, y: 0, width: 30, height: 20)
+        bikeLayer.position = CGPoint(x: 0, y: 150)
         self.containLayer.layer.addSublayer(bikeLayer)
         
-        var animation = CAKeyframeAnimation()
+        let animation = CAKeyframeAnimation()
         animation.keyPath = "position"
         animation.duration = 4
-        animation.path = bezierPath.CGPath
-        bikeLayer.position = CGPointMake(300, 150)
+        animation.path = bezierPath.cgPath
+      bikeLayer.position = CGPoint(x: 300, y: 150)
         animation.rotationMode = kCAAnimationRotateAuto
-        bikeLayer.addAnimation(animation, forKey: nil)
+      bikeLayer.add(animation, forKey: nil)
         
     }
 

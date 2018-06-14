@@ -13,7 +13,8 @@ class DrawImageViewController: UIViewController {
     @IBOutlet weak var layerView: UIView!
     override func viewDidLoad() {
         super.viewDidLoad()
-        var image = UIImage(named: "snowman")
-        self.layerView.layer.contents = image?.CGImage
+      if let image = UIImage(named: "snowman") {
+        self.layerView.layer.contents = image.cgImage
+      }
     }
 }

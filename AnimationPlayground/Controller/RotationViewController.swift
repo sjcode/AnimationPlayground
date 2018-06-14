@@ -15,9 +15,9 @@ class RotationViewController: UIViewController {
         super.viewDidLoad()
 
         let shipLayer = CALayer()
-        shipLayer.frame = CGRectMake(0, 0, 128, 128)
-        shipLayer.position = CGPointMake(150, 150)
-        shipLayer.contents = UIImage(named: "snowman")?.CGImage
+        shipLayer.frame =  CGRect(x: 0, y: 0, width: 128, height: 128) //CGRectMake(0, 0, 128, 128)
+        shipLayer.position = CGPoint(x: 150, y: 150)
+        shipLayer.contents = UIImage(named: "snowman")?.cgImage
         
         self.containView.layer .addSublayer(shipLayer)
         
@@ -40,7 +40,7 @@ class RotationViewController: UIViewController {
         animationGroup.duration = 4
         animationGroup.autoreverses = true
         animationGroup.repeatCount = HUGE
-        shipLayer.addAnimation(animationGroup, forKey: nil)
+      shipLayer.add(animationGroup, forKey: nil)
     }
 
     

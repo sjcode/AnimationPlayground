@@ -22,10 +22,10 @@ class CocoaUIViewController: UIViewController,UITextFieldDelegate {
             var animation = CAKeyframeAnimation()
             animation.keyPath = "position.x"
             animation.values = [0,10,-10,10,0]
-            animation.keyTimes = [0, 1/6.0, 3/6.0, 5/6.0, 1]
+          animation.keyTimes = [0, 1/6.0, 3/6.0, 5/6.0, 1] as [NSNumber]
             animation.duration = 0.4
-            animation.additive = true
-            self.passwordPanel.layer.addAnimation(animation, forKey: nil)
+          animation.isAdditive = true
+          self.passwordPanel.layer.add(animation, forKey: nil)
         }
         return true
     }
